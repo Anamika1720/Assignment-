@@ -1,0 +1,249 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica', sans-serif;
+    font-size: 13px;
+    background-color: #717272;
+}
+
+#container {
+    display: flex;
+}
+
+#box1 {
+    width: 220px;
+    background-color: #f8f8f8; 
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+#box2 {
+    display: flex;
+    flex-direction: column;
+    background: #f6f6f6;
+    flex-grow: 1;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    height: 60px;
+    margin-bottom: 10px; 
+}
+
+#horizontal_container {
+    display: flex; 
+    /* flex: 1; */
+    flex-direction: row;
+    background-color: #e8e9e7;
+}
+
+#box3 {
+    flex: 2; 
+    min-width: 300px; 
+    background-color: #e8e9e7;
+    padding: 10px;
+    margin-right: 5px;
+}
+
+#box4 {
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    flex: 1; 
+    min-width: 200px; 
+    background-color: #fff; 
+    padding: 10px;
+}
+
+.box4_top,
+.box4_middle h5,
+.box4_bottom_top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box4_top,
+.box4_middle h5,
+.box4_bottom_top {
+    display: flex;
+    align-items: center;
+}
+
+.box4_bottom {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+hr {
+    display: block;
+    border: 0.5px solid black;
+}
+
+h4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.icon-text {
+    display: flex;
+    align-items: center;
+    margin: 5px 0; 
+}
+
+#steps {
+    background-color: #fff;
+}
+
+#steps h4{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.steps_color {
+    display:inline-flex;
+    align-items: center;
+    background-color: #f6f6f6;
+    padding: 5px 2px;
+    border-radius: 4px;
+    margin: 2px;
+}
+
+.box3_content {
+    background-color: #e8e9e7;
+}
+
+.box4_top {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.box4_middle label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.box4_middle input[type="radio"] {
+    margin-right: 5px;
+}
+
+.box4_middle textarea {
+    height: 100px;
+    width: 100%; 
+    padding: 5px; 
+    margin: 5px;
+    border: 1px solid #ccc; 
+    border-radius: 4px;
+    background-color: #000;
+    color: #fff;
+}
+
+.box4_middle h5,
+.box4_bottom_top {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+}
+
+.box4_middle label,
+.box4_bottom label {
+    display: flex;
+    align-items: center; 
+}
+
+.line-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; 
+}
+
+.line-item p, .line-item span {
+    margin-left: 8px; 
+}
+
+.authentication {
+    background-color: #7fbf7f;
+    padding: 5px;
+    margin-left: 40px;
+    border-radius: 5px;
+    display: inline-block;
+    align-items: center;
+}
+
+.configure {
+    display: inline-block;
+    background-color: #7fbf7f;
+    padding: 6px;
+    margin: 6px;
+    border-radius: 5px;
+}
+
+.stars{
+    background-color: #7fbf7f;
+}
+
+.parent {
+    text-align: right;
+}
+
+.walkover,
+.all_employees {
+    margin-right: 10px; 
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block; 
+    background-color: #f4f4f4;
+}
+
+.help_message {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgb(103, 144, 103);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.help_message input {
+    padding: 5px;
+}
+
+.material-symbols-outlined {
+    margin-right: 5px;
+}
+
+.arrow_drop_up {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.done_button {
+    position: sticky;
+    background-color: #00eb7a;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    #container {
+        flex-direction: column; 
+    }
+
+    #box2 {
+        margin: 0;
+    }
+
+    #horizontal_container {
+        flex-direction: column; 
+    }
+}
