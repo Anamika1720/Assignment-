@@ -12,10 +12,10 @@
 <body>
     <div id="container">
         <div id="box1">
-            <div>
+            <div class="left-menu-options">
                 <span class="material-symbols-outlined"> box </span>
 
-                <div class="icon-text" style="background-color: #18d30b">
+                <div class="icon-text icon-text-active">
                     <span class="material-symbols-outlined">add</span>Create Flow
                 </div>
 
@@ -45,115 +45,119 @@
                 </div>
             </div>
 
-            <div>
+            <div class="left-menu-options">
                 <div class="icon-text">
                     <span class="material-symbols-outlined"> group </span>Members
                 </div>
 
                 <div class="icon-text">
-                    <span class="material-symbols-outlined"> settings </span>WorkSpace
-                    Settings
+                    <span class="material-symbols-outlined"> settings </span>WorkSpace Settings
                 </div>
 
-                <div class="icon-text" class="arrow_drop_up">
-                    <div> <span class="material-symbols-outlined"> atr </span>Walkover</div>
-                    <div><span class="material-symbols-outlined"> arrow_drop_up </span></div>
+                <div class="icon-text arrow_drop_up">
+                    <div>
+                        <span class="material-symbols-outlined"> atr </span>Walkover
+                    </div>
+                    <div>
+                        <span class="material-symbols-outlined"> arrow_drop_up </span>
+                    </div>
                 </div>
 
-                <div class="icon-text" class="arrow_drop_up">
-                    <div><span class="material-symbols-outlined"> person </span>Devendra
+                <div class="icon-text arrow_drop_up">
+                    <div>
+                        <span class="material-symbols-outlined"> person </span>Devendra
                         Patidar
                     </div>
-
-                    <div><span class="material-symbols-outlined"> arrow_drop_up </span></div>
+                    <div>
+                        <span class="material-symbols-outlined"> arrow_drop_up </span>
+                    </div>
                 </div>
-
             </div>
         </div>
 
         <div id="box2">
             <div id="header">
-                <div class="birthday_flow">
-                    <span class="material-symbols-outlined"> chevron_right </span>
+                <div class="birthday-flow">
+                    <span class="material-symbols-outlined fs-36"> chevron_left </span>
                     <span class="material-symbols-outlined"> schedule </span>
-                    Birthday wish flow <span style="background-color: #9ca19c;">draft</span>
+                    <span class="header-title">Birthday wish flow</span>
+                    <div>
+                        <div class="birthday-flow-tag">draft</div>
+                    </div>
                 </div>
 
-                <div id="publish_button">
-                    <button style="background-color: #7fbf7f;">Test</button>
-                    <button style="background-color: #0a9653;">Publish Flow</button>
-                    <span><span class="material-symbols-outlined"> more_vert </span></span>
+                <div class="publish-button">
+                    <button class="test-btn">Test</button>
+                    <button class="icon-text-active publish-flow">Publish Flow</button>
+                    <span><span class="material-symbols-outlined three-dots"> more_vert </span></span>
                 </div>
             </div>
-
 
             <div id="horizontal_container">
                 <div id="box3">
                     <div id="steps">
                         <h4>
-                            <div>Flow: 5 steps</div>
-                            <div>configure
-                                <span class="material-symbols-outlined"> unfold_more </span>
+                            <div class="card-header">Flow: 5 steps</div>
+                            <div class="d-flex">
+                                <button class="btn-danger btn">configure</button>
+                                <span class="material-symbols-outlined"> unfold_less </span>
                             </div>
                         </h4>
-                        <p>
-                            <span class="material-symbols-outlined">
-                                looks_one
-                            </span>
+                        <div class="step-element">
+                            <div class="colored-icon colored-icon-success">1</div>
                             <span class="steps_color">
-                                <span class="material-symbols-outlined"> schedule </span> trigger
-                                this flow daily at 7am
+                                <span class="material-symbols-outlined"> schedule </span>
+                                trigger this flow daily at 7am
                             </span>
-                        </p>
-                        <p>
-                            <span class="material-symbols-outlined">
-                                looks_two
-                            </span>
+                        </div>
+                        <div class="step-element">
+                            <div class="colored-icon colored-icon-success">2</div>
                             <span class="steps_color">
-                                <span class="material-symbols-outlined"> data_object </span>retrive data from walkover
+                                <span class="material-symbols-outlined"> data_object </span>retrieve data from walkover
                             </span>
-                        </p>
-                        <p>
-                            <span class="material-symbols-outlined">
-                                looks_3
-                            </span>
+                        </div>
+                        <div class="step-element">
+                            <div class="colored-icon colored-icon-danger">3</div>
                             <span class="steps_color">
-                                <span class="material-symbols-outlined"> filter_alt </span>filter
-                                data via code
+                                <span class="material-symbols-outlined"> filter_alt </span>filter data via code
                             </span>
-                        </p>
-                        <p>
-                            <span class="material-symbols-outlined">
-                                looks_4
-                            </span>
+                        </div>
+                        <div class="step-element">
+                            <div class="colored-icon colored-icon-danger">4</div>
                             <span class="steps_color">
-                                <span class="material-symbols-outlined"> directory_sync </span>
+                                <span class="material-symbols-outlined">
+                                    directory_sync
+                                </span>
                                 Run following flow individually for each list item
                             </span>
-                        </p>
-                        <p>
-                            <span class="material-symbols-outlined">
-                                looks_5
-                            </span>
+                        </div>
+                        <div class="step-element">
+                            <div class="colored-icon colored-icon-danger">5</div>
                             <span class="steps_color">
                                 <span class="material-symbols-outlined"> grain </span> Send
                                 message on slack
                             </span>
-                        </p>
+                        </div>
                     </div>
 
                     <div id="box3_content">
                         <div class="line-item">
-                            <span class="material-symbols-outlined">star</span>
-                            <p>For the second step please authenticate Airtable to fetch Base and table.</p>
+                            <span class="material-symbols-outlined color-star">star</span>
+                            <p>
+                                For the second step please authenticate Airtable to fetch Base
+                                and table.
+                            </p>
                         </div>
                         <div class="line-item authentication">
-                            <span class="material-symbols-outlined">task_alt</span>
+                            <span class="material-symbols-outlined right-icon">task_alt</span>
                             <span>Authenticated Successfully!</span>
                         </div>
                         <div class="line-item">
-                            <span class="material-symbols-outlined">star</span>
-                            <p>Airtable authenticated successfully! Now please enter the Base Name</p>
+                            <span class="material-symbols-outlined color-star">star</span>
+                            <p>
+                                Airtable authenticated successfully! Now please enter the Base
+                                Name
+                            </p>
                         </div>
 
                         <div class="parent">
@@ -161,7 +165,7 @@
                         </div>
 
                         <div class="line-item">
-                            <span class="material-symbols-outlined">star</span>
+                            <span class="material-symbols-outlined color-star">star</span>
                             <p>Now please enter the table name</p>
                         </div>
 
@@ -170,77 +174,89 @@
                         </div>
 
                         <div class="line-item">
-                            <span class="material-symbols-outlined">star</span>
-                            <p>Step 2: Retrieve data from Airtable configured successfully! Now let's move to the third
-                                space.</p>
+                            <span class="material-symbols-outlined color-star">star</span>
+                            <p>
+                                Step 2: Retrieve data from Airtable configured successfully!
+                                Now let's move to the third space.
+                            </p>
                         </div>
-                        <div class="help_message">
-                            <div>
-                                <span class="material-symbols-outlined">star</span>
-                                <input type="text" name="text" id="text" placeholder="What can I help you with?">
+                        <div class="help-message">
+                            <div class="msg-container">
+                                <span class="material-symbols-outlined color-star">star</span>
+                                <input type="text" name="text" id="message-text"
+                                    placeholder="What can I help you with?" />
                             </div>
-                            <div><span class="material-symbols-outlined">send</span></div>
+                            <div><span class="material-symbols-outlined color-star">send</span></div>
                         </div>
                     </div>
-
                 </div>
-
 
                 <div id="box4">
                     <div>
-                        <div class="box4_top">
-                            <div>
+                        <div class="box4-top">
+                            <div class="schedule">
                                 <span class="material-symbols-outlined"> schedule </span>
-                                Corn advance configuration
+                                <span>Corn advance configuration</span>
                             </div>
                             <div>
                                 <span class="material-symbols-outlined"> close </span>
                             </div>
                         </div>
-                        <hr>
+                        <hr />
                     </div>
 
-                    <div class="box4_middle">
-                        <h5>
-                            Filter data
-                            <span class="material-symbols-outlined"> keyboard_arrow_up </span>
-                        </h5>
-                        <label>
-                            <input type="radio" name="filter" class="filter" value="via Key" checked />
-                            via Key
-                        </label>
-                        <label>
-                            <input type="radio" name="filter" class="filter" value="via Code" />
-                            via Code(script)
-                        </label>
+                    <div class="box4-middle">
+                        <div class="box4-header">
+                            <h4>
+                                Filter data </h4>
+                            <span class="material-symbols-outlined">
+                                keyboard_arrow_up
+                            </span>
+                        </div>
+
+                        <div class="radio-button">
+                            <label>
+                                <input type="radio" name="filter" class="filter" value="via Key" checked />
+                                via Key
+                            </label>
+                            <label>
+                                <input type="radio" name="filter" class="filter" value="via Code" />
+                                via Code (script)
+                            </label>
+                        </div>
+
                         <p>
-                            By default, Viasocket gives you entire payload of the webhook. You can filter the data using
-                            custom code.
+                            By default, Viasocket gives you entire payload of the webhook.
+                            You can filter the data using custom code.
                         </p>
-                        <textarea name="" id="">
+
+                        <textarea class="input-code">
                             Once user click on use code, code will come here.
                         </textarea>
+
                         <div>
                             <div class="configure">
-                                <span class="material-symbols-outlined"> star </span> Configure using AI
+                                <span class="material-symbols-outlined"> star </span>
+                                Configure using AI
                             </div>
                         </div>
                         <hr />
                     </div>
 
-                    <div class="box4_bottom">
+                    <div class="box4-bottom">
                         <div>
-                            <div class="box4_bottom_top">
+                            <div class="box4-bottom-top">
+                                <div class="list">Iterate over list</div>
                                 <div>
-                                    Iterate over list
-                                </div>
-                                <div>
-                                    <span class="material-symbols-outlined"> keyboard_arrow_up </span>
+                                    <span class="material-symbols-outlined">
+                                        keyboard_arrow_up
+                                    </span>
                                 </div>
                             </div>
                             <p>
-                                If your payload is a list and you want to run this flow individually for each list item
-                                then please enable this option.
+                                If your payload is a list and you want to run this flow
+                                individually for each list item then please enable this
+                                option.
                             </p>
                             <label>
                                 <input type="checkbox" name="subscribe" value="yes" />
@@ -253,11 +269,8 @@
                         </div>
                     </div>
                 </div>
-
-
             </div>
         </div>
-    </div>
     </div>
 </body>
 
